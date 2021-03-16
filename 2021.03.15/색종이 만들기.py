@@ -4,7 +4,7 @@ blue       = 0
 white      = 0
 for _ in range(N):
     paper_list.append(list(map(int, input().split())))
-
+print(paper_list)
 
 def paper_test(x,y,n):
     global blue, white, paper_list
@@ -17,10 +17,10 @@ def paper_test(x,y,n):
 
         for j in range(y, y+n):
             if first_color != paper_list[j][i]:
-                paper_test(x, y, n//2) # 2사분면
-                paper_test(x+n//2, y, n//2) # 1사분면
-                paper_test(x, y+n//2, n//2) # 3사분면
-                paper_test(x+n//2, y+n//2, n//2) # 4사분면
+                paper_test(x, y, n//2) 
+                paper_test(x+n//2, y, n//2) 
+                paper_test(x, y+n//2, n//2) 
+                paper_test(x+n//2, y+n//2, n//2) 
                 status = True
                 break
         
