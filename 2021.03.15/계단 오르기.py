@@ -6,7 +6,7 @@ for number in range(n):
     n_list.append(num)
 
 for index in range(1, len(n_list)):
-    print(dp)
+
     if index == 2:
         dp[index] = n_list[index-1] + n_list[index]
         continue
