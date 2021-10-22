@@ -13,7 +13,7 @@ def next_max_number(number):
             print(new_number)
             print(share)
             print(remainder)
-            print(stack)len_one
+            print(stack)
 
             new_number = share
             if remainder:
