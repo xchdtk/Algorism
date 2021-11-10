@@ -1,5 +1,7 @@
 from collections import deque
 # bfs queue 이용
+
+
 def solution(numbers, target):
     answer = 0
     queue = deque()
@@ -7,8 +9,7 @@ def solution(numbers, target):
     queue.append([-numbers[0], 0])
     n = len(numbers)
     while queue:
-        temp, idx = queue.popleft();
-        print(temp)
+        temp, idx = queue.popleft()
         idx += 1
         if idx < n:
             queue.append([temp + numbers[idx], idx])
@@ -19,10 +20,3 @@ def solution(numbers, target):
                 answer += 1
 
     return answer
-
-numbers = [1, 1, 1, 1, 1]
-target = 3
-print(solution(numbers, target))
-
-
-

@@ -5,7 +5,3 @@ def solution(n):
         answer = '124'[n % 3] + answer
         n //= 3
     return answer
-
-
-n = 13
-print(solution(n))

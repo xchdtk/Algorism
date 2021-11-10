@@ -5,10 +5,7 @@ def solution(s):
             stack.pop()
             continue
         stack.append(chracter)
-            
+
     if stack:
         return 0
     return 1
-
-s = 'baabaaa'
-print(solution(s))
